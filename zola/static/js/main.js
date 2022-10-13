@@ -29,6 +29,7 @@ if (!sidebar_collapsed) {
 }
 
 // Add click listener to all collapsible sections
+/*
 for (let i = 0; i < sections.length; i++) {
 	// Initial setup
 	let wrapper = $(sections[i].nextElementSibling);
@@ -65,3 +66,4 @@ for (let i = 0; i < sections.length; i++) {
 		}
 	});
 }
+*/
