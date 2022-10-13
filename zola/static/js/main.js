@@ -45,7 +45,6 @@ for (let i = 0; i < sections.length; i++) {
 	}
 
 	// Click listener
-	/*
 	sections[i].addEventListener("click", function () {
 		// Toggle class
 		this.classList.toggle("open");
@@ -65,6 +64,6 @@ for (let i = 0; i < sections.length; i++) {
 			}
 		}
 	});
-	*/
+
 }
 
