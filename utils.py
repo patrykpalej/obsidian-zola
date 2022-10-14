@@ -326,8 +326,10 @@ class Settings:
         	interaction: {
         		hover: true,
         	},
-        	height: "100%",
-        	width: "100%",
+        	height: "50%",
+        	width: "50%",
+        	top: "25%",
+        	left: "25%",
         	physics: {
         		solver: "repulsion",
         	},
