@@ -198,7 +198,7 @@ class Collapse extends BaseComponent {
       EventHandler.trigger(this._element, EVENT_SHOWN)
     }
 
-    const capitalizedDimension = dimension[0].toUpperCase() + dimension.slice(1)
+    const capitalizedDimension = dimension[0] + dimension.slice(1)  // dimension[0].toUpperCase()
     const scrollSize = `scroll${capitalizedDimension}`
     const transitionDuration = getTransitionDurationFromElement(this._element)
 
