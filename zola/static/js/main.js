@@ -16,7 +16,7 @@ document.getElementById("mode").addEventListener("click", () => {
 	if (localStorage.getItem("theme") == "light") {
 		contactImage.src = contactImageDarkMode
 	} else {
-		contactImage.src = contactImageLightMode
+		contactImage.src = contactImageDarkMode
 	}
 	// -----
 
