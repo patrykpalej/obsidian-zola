@@ -42,16 +42,18 @@
 {#                <div style="display: flex; flex-flow: row wrap;  width: 40rem; column-gap: 2rem;">#}
                   <a style="width: 15rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.netlify.app/docs/o-mnie" role="button">Python</a>
                   <br>
-
+                  <br>
                   <a style="width: 15rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.netlify.app/docs/o-mnie" role="button">Data Science</a>
                   <br>
                   <br>
                   <a style="width: 15rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.netlify.app/docs/o-mnie" role="button">Machine Learning</a>
                   <br>
+                  <br>
                   <a style="width: 15rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.netlify.app/docs/o-mnie" role="button">Bazy danych</a>
                   <br>
                   <br>
                   <a style="width: 15rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.netlify.app/docs/o-mnie" role="button">Pozyskiwanie danych</a>
+                  <br>
                   <br>
                   <a style="width: 15rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.netlify.app/docs/o-mnie" role="button">Git</a>
 {#                </div>#}
@@ -68,10 +70,10 @@
 {% endif %}
 
 </div>
-
-{% block footer %}
-  {{ macros_footer::footer() }}
-{% endblock footer %}
+{##}
+{#{% block footer %}#}
+{#  {{ macros_footer::footer() }}#}
+{#{% endblock footer %}#}
 
 {% if config.extra.home_graph %}
   {{ macros_graph::graph_js() }}
