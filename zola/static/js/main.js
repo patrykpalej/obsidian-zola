@@ -3,6 +3,7 @@ function isDark() {
 	return document.body.classList.contains("dark");
 }
 
+console.log("TERAZ")
 const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADTZkXnyDxm/preview"
 const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview"
 
@@ -13,7 +14,7 @@ document.getElementById("mode").addEventListener("click", () => {
 
 	// -----
 	const contactImage = document.getElementById("contact")
-	console.log("TERAZ")
+
 	if (localStorage.getItem("theme") == "light") {
 		contactImage.src = contactImageLightMode
 	} else {
