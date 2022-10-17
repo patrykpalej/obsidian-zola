@@ -13,6 +13,7 @@ document.getElementById("mode").addEventListener("click", () => {
 
 	// -----
 	const contactImage = document.getElementById("contact")
+	console.log("TERAZ")
 	if (localStorage.getItem("theme") == "light") {
 		contactImage.src = contactImageLightMode
 	} else {
