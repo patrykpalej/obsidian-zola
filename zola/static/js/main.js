@@ -3,8 +3,8 @@ function isDark() {
 	return document.body.classList.contains("dark");
 }
 
-const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/jKzSxxNdsEMwBTQ?x=1908&y=661&a=true&file=email_lm.png&scalingup=0"
-const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/tFgPoebteaf3GLT?x=1908&y=661&a=true&file=email.png&scalingup=0"
+const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/D4DFADTZkXnyDxm?x=1920&y=645&a=true&file=email_lm.png&scalingup=0"
+const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/PMcQXKXFMAPQW7b?x=1920&y=645&a=true&file=email.png&scalingup=0"
 
 document.getElementById("mode").addEventListener("click", () => {
 	document.body.classList.toggle("dark");
@@ -14,7 +14,7 @@ document.getElementById("mode").addEventListener("click", () => {
 	// -----
 	const contactImage = document.getElementById("contact")
 	if (localStorage.getItem("theme") == "light") {
-		contactImage.src = contactImageDarkMode
+		contactImage.src = contactImageLightMode
 	} else {
 		contactImage.src = contactImageDarkMode
 	}
