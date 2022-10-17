@@ -8,6 +8,7 @@ document.getElementById("mode").addEventListener("click", () => {
 
 	localStorage.setItem("theme", isDark() ? "dark" : "light");
 
+
 	// Update graph colors if exists
 	if (graph) {
 		graph.setOptions({
@@ -21,6 +22,18 @@ document.getElementById("mode").addEventListener("click", () => {
 		});
 	}
 });
+
+
+// -----
+contactImage = document.getElementById("contact")
+if localStorage.getItem("theme") == "light" {
+	contactImage.src = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/jKzSxxNdsEMwBTQ?x=1908&y=661&a=true&file=email_lm.png&scalingup=0"
+} else {
+	contactImage.src = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/tFgPoebteaf3GLT?x=1908&y=661&a=true&file=email.png&scalingup=0"
+}
+// -----
+
+
 
 // Collapsible sidebar code (it's ugly but I don't care)
 var sections = $(".collapsible-section");
