@@ -3,17 +3,22 @@ function isDark() {
 	return document.body.classList.contains("dark");
 }
 
+// const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/jKzSxxNdsEMwBTQ?x=1908&y=661&a=true&file=email_lm.png&scalingup=0"
+// const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/tFgPoebteaf3GLT?x=1908&y=661&a=true&file=email.png&scalingup=0"
+
 document.getElementById("mode").addEventListener("click", () => {
 	document.body.classList.toggle("dark");
 
 	localStorage.setItem("theme", isDark() ? "dark" : "light");
 
+	// -----
 	const contactImage = document.getElementById("contact")
 	if (localStorage.getItem("theme") == "light") {
 		contactImage.src = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/jKzSxxNdsEMwBTQ?x=1908&y=661&a=true&file=email_lm.png&scalingup=0"
 	} else {
 		contactImage.src = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/tFgPoebteaf3GLT?x=1908&y=661&a=true&file=email.png&scalingup=0"
 	}
+	// -----
 
 
 	// Update graph colors if exists
@@ -29,11 +34,6 @@ document.getElementById("mode").addEventListener("click", () => {
 		});
 	}
 });
-
-
-// -----
-
-// -----
 
 
 
