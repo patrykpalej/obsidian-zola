@@ -14,9 +14,9 @@ document.getElementById("mode").addEventListener("click", () => {
 	// -----
 	const contactImage = document.getElementById("contact")
 	if (localStorage.getItem("theme") == "light") {
-		contactImage.src = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/jKzSxxNdsEMwBTQ?x=1908&y=661&a=true&file=email_lm.png&scalingup=0"
+		contactImage.src = "email.png"
 	} else {
-		contactImage.src = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/tFgPoebteaf3GLT?x=1908&y=661&a=true&file=email.png&scalingup=0"
+		contactImage.src = "email_lm.png"
 	}
 	// -----
 
