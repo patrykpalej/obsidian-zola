@@ -3,18 +3,8 @@ function isDark() {
 	return document.body.classList.contains("dark");
 }
 
-console.log("TERAZ")
 const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADTZkXnyDxm/preview"
 const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview"
-
-const contactImage = document.getElementById("contact")
-if (contactImage !== null) {
-	if (localStorage.getItem("theme") == "light") {
-		contactImage.src = contactImageLightMode
-	} else {
-		contactImage.src = contactImageDarkMode
-	}
-}
 
 document.getElementById("mode").addEventListener("click", () => {
 	document.body.classList.toggle("dark");
@@ -22,13 +12,12 @@ document.getElementById("mode").addEventListener("click", () => {
 	localStorage.setItem("theme", isDark() ? "dark" : "light");
 
 	// -----
-	// const contactImage = document.getElementById("contact")
-	//
-	// if (localStorage.getItem("theme") == "light") {
-	// 	contactImage.src = contactImageLightMode
-	// } else {
-	// 	contactImage.src = contactImageDarkMode
-	// }
+	const contactImage = document.getElementById("contact")
+	if (localStorage.getItem("theme") == "light") {
+		contactImage.src = contactImageLightMode
+	} else {
+		contactImage.src = contactImageDarkMode
+	}
 	// -----
 
 
