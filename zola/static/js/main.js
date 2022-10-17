@@ -8,12 +8,13 @@ const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADT
 const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview"
 
 const contactImage = document.getElementById("contact")
-
+if (contactImage !== null) {
 	if (localStorage.getItem("theme") == "light") {
 		contactImage.src = contactImageLightMode
 	} else {
 		contactImage.src = contactImageDarkMode
 	}
+}
 
 document.getElementById("mode").addEventListener("click", () => {
 	document.body.classList.toggle("dark");
