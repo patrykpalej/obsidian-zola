@@ -3,8 +3,8 @@ function isDark() {
 	return document.body.classList.contains("dark");
 }
 
-const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/D4DFADTZkXnyDxm?x=1920&y=645&a=true&file=email_lm.png&scalingup=0"
-const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/apps/files_sharing/publicpreview/PMcQXKXFMAPQW7b?x=1920&y=645&a=true&file=email.png&scalingup=0"
+const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADTZkXnyDxm/preview"
+const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview"
 
 document.getElementById("mode").addEventListener("click", () => {
 	document.body.classList.toggle("dark");
