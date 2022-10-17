@@ -70,10 +70,10 @@
 {% endif %}
 
 </div>
-{##}
-{#{% block footer %}#}
-{#  {{ macros_footer::footer() }}#}
-{#{% endblock footer %}#}
+
+{% block footer %}
+  {{ macros_footer::footer() }}
+{% endblock footer %}
 
 {% if config.extra.home_graph %}
   {{ macros_graph::graph_js() }}
