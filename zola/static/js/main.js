@@ -7,19 +7,27 @@ console.log("TERAZ")
 const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADTZkXnyDxm/preview"
 const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview"
 
-document.getElementById("mode").addEventListener("click", () => {
-	document.body.classList.toggle("dark");
-
-	localStorage.setItem("theme", isDark() ? "dark" : "light");
-
-	// -----
-	const contactImage = document.getElementById("contact")
+const contactImage = document.getElementById("contact")
 
 	if (localStorage.getItem("theme") == "light") {
 		contactImage.src = contactImageLightMode
 	} else {
 		contactImage.src = contactImageDarkMode
 	}
+
+document.getElementById("mode").addEventListener("click", () => {
+	document.body.classList.toggle("dark");
+
+	localStorage.setItem("theme", isDark() ? "dark" : "light");
+
+	// -----
+	// const contactImage = document.getElementById("contact")
+	//
+	// if (localStorage.getItem("theme") == "light") {
+	// 	contactImage.src = contactImageLightMode
+	// } else {
+	// 	contactImage.src = contactImageDarkMode
+	// }
 	// -----
 
 
