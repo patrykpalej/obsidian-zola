@@ -342,7 +342,7 @@
         EventHandler__default['default'].trigger(this._element, EVENT_SHOWN);
       };
 
-      const capitalizedDimension = dimension[0].toUpperCase() + dimension.slice(1);
+      const capitalizedDimension = dimension[0] + dimension.slice(1);  // .toUpperCase()
       const scrollSize = `scroll${capitalizedDimension}`;
       const transitionDuration = getTransitionDurationFromElement(this._element);
       EventHandler__default['default'].one(this._element, 'transitionend', complete);
