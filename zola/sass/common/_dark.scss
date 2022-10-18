@@ -256,7 +256,7 @@ body.dark .docs-links h3:not(:first-child) {
 
 body.dark a.docs-link {
 	color: $body-color-dark;
-	text-transform: none !important;
+	text-transform: revert !important;
 }
 
 body.dark .page-links li:not(:first-child) {
