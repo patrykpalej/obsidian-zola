@@ -7298,7 +7298,7 @@ textarea.form-control-lg {
 }
 
 .text-capitalize {
-  text-transform: capitalize !important;
+  text-transform: none;  /* capitalize !important; */
 }
 
 .text-wrap {
