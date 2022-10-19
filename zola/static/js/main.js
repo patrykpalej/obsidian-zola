@@ -36,10 +36,11 @@ const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXF
 // });
 
 // -----------------------------------
+const configYamlUrl = "https://raw.githubusercontent.com/patrykpalej/python-szkolenia/master/config.yml"
 const trainings = ["Analiza danych", "Python od podstaw"]
 let htmlContent = ""
 for (t of trainings) {
-	htmlContent += `<a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-od-podstaw-spis-tresci" role="button"></a>
+	htmlContent += `<a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-od-podstaw-spis-tresci" role="button">${t}</a>
     <br> <br>
  `
 }
