@@ -37,9 +37,10 @@ const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXF
 
 // -----------------------------------
 const configYamlUrl = "https://raw.githubusercontent.com/patrykpalej/python-szkolenia/master/config.yml"
-const trainings = ["Analiza danych", "Python od podstaw"]
+const trainings = ["Analiza danych|todo", "Python od podstaw"]
 let htmlContent = ""
-for (t of trainings) {
+for (let t of trainings) {
+	t = t.replace('|todo', '')
 	htmlContent += `<a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-od-podstaw-spis-tresci" role="button">${t}</a>
     <br> <br>
  `
