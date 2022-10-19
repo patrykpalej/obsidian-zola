@@ -1,7 +1,3 @@
-<p align="center">
-  <img height="200" src="icon.png">
-</p>
-
 # obsidian-zola
 
 ![](https://img.shields.io/github/v/release/ppeetteerrs/obsidian-zola)
