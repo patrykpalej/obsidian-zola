@@ -37,23 +37,23 @@ const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXF
 
 // -----------------------------------
 
-document.getElementById("tematy-szkolen").innerHTML = `<a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-spis-tresci" role="button">Python</a>
-                  <br>
-                  <br>
-                  <a style="width: 16rem; opacity: 0.5;" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#data-science-spis-tresci" role="button">Data Science</a>
-                  <br>
-                  <br>
-                  <a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/o-mnie" role="button">Machine Learning</a>
-                  <br>
-                  <br>
-                  <a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/o-mnie" role="button">Bazy danych</a>
-                  <br>
-                  <br>
-                  <a style="width: 16rem; opacity: 0.5;" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-spis-tresci" role="button">Pozyskiwanie danych</a>
-                  <br>
-                  <br>
-                  <a style="width: 16rem; opacity: 0.5;" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-spis-tresci" role="button">Git</a>`;
-
+// document.getElementById("tematy-szkolen").innerHTML = `<a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-spis-tresci" role="button">Python</a>
+//                   <br>
+//                   <br>
+//                   <a style="width: 16rem; opacity: 0.5;" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#data-science-spis-tresci" role="button">Data Science</a>
+//                   <br>
+//                   <br>
+//                   <a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/o-mnie" role="button">Machine Learning</a>
+//                   <br>
+//                   <br>
+//                   <a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/o-mnie" role="button">Bazy danych</a>
+//                   <br>
+//                   <br>
+//                   <a style="width: 16rem; opacity: 0.5;" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-spis-tresci" role="button">Pozyskiwanie danych</a>
+//                   <br>
+//                   <br>
+//                   <a style="width: 16rem; opacity: 0.5;" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-spis-tresci" role="button">Git</a>`;
+//
 
 // -----------------------------------
 
