@@ -37,6 +37,7 @@ const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXF
 
 // -----------------------------------
 
+try {
 document.getElementById("tematy-szkolen").innerHTML = `
 				<a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-spis-tresci" role="button">Python</a>
                   <br>
@@ -45,6 +46,8 @@ document.getElementById("tematy-szkolen").innerHTML = `
                   <br>
                   <br>
                   <a style="width: 16rem" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/o-mnie" role="button">Machine Learning</a>`;
+} catch (e) {}
+
 // ----------------------------------------------------------------
 
 //                   <br>
