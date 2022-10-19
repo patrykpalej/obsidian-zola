@@ -3,37 +3,37 @@ function isDark() {
 	return document.body.classList.contains("dark");
 }
 
-const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADTZkXnyDxm/preview"
-const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview"
+const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADTZkXnyDxm/preview";
+const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview";
 
-document.getElementById("mode").addEventListener("click", () => {
-	document.body.classList.toggle("dark");
-
-	localStorage.setItem("theme", isDark() ? "dark" : "light");
-
-	// -----
-	const contactImage = document.getElementById("contact")
-	if (localStorage.getItem("theme") == "light") {
-		contactImage.src = contactImageLightMode
-	} else {
-		contactImage.src = contactImageDarkMode
-	}
-	// -----
-
-
-	// Update graph colors if exists
-	if (graph) {
-		graph.setOptions({
-			nodes: {
-				color: isDark() ? "#8c8e91" : "#dee2e6",
-				font: {
-					color: isDark() ? "#c9cdd1" : "#616469",
-					strokeColor: isDark() ? "#c9cdd1" : "#616469",
-				},
-			},
-		});
-	}
-});
+// document.getElementById("mode").addEventListener("click", () => {
+// 	document.body.classList.toggle("dark");
+//
+// 	localStorage.setItem("theme", isDark() ? "dark" : "light");
+//
+// 	// -----
+// 	const contactImage = document.getElementById("contact")
+// 	if (localStorage.getItem("theme") == "light") {
+// 		contactImage.src = contactImageLightMode
+// 	} else {
+// 		contactImage.src = contactImageDarkMode
+// 	}
+// 	// -----
+//
+//
+// 	// Update graph colors if exists
+// 	if (graph) {
+// 		graph.setOptions({
+// 			nodes: {
+// 				color: isDark() ? "#8c8e91" : "#dee2e6",
+// 				font: {
+// 					color: isDark() ? "#c9cdd1" : "#616469",
+// 					strokeColor: isDark() ? "#c9cdd1" : "#616469",
+// 				},
+// 			},
+// 		});
+// 	}
+// });
 
 
 
