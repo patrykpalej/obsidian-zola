@@ -41,7 +41,7 @@ const trainings = ["Analiza danych|todo", "Python od podstaw"]
 let htmlContent = ""
 for (let t of trainings) {
 	let new_t = t.replace('|todo', '')
-	htmlContent += `<a style="width: 16rem; ${t.includes('|todo') ? 'opacity: 0.5' : ''}" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-od-podstaw-spis-tresci" role="button">${new_t}</a>
+	htmlContent += `<a style="width: 16rem; ${t.includes('|todo') ? 'opacity: 0.3' : ''}" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-od-podstaw-spis-tresci" role="button">${new_t}</a>
     <br> <br>
  `
 }
