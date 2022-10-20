@@ -36,8 +36,17 @@ const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXF
 // });
 
 // -----------------------------------
-const configYamlUrl = "https://raw.githubusercontent.com/patrykpalej/python-szkolenia/master/config.yml"
-const trainings = ["Analiza danych|todo", "Python od podstaw"]
+(async () => {
+    async function get_config() {
+  const data = await fetch("https://raw.githubusercontent.com/patrykpalej/python-szkolenia/master/config.json");
+  const txt = await data.text()
+  return await JSON.parse(txt);
+}
+
+// const configJson = "https://raw.githubusercontent.com/patrykpalej/python-szkolenia/master/config.json";
+const config = await get_config();
+const trainings = Object.keys(config).sort()
+
 let htmlContent = ""
 for (let t of trainings) {
 	let new_t = t.replace('|todo', '')
@@ -49,6 +58,23 @@ for (let t of trainings) {
 try {
 document.getElementById("tematy-szkolen").innerHTML = htmlContent
 } catch (e) {}
+
+
+})();
+
+
+const trainings = ["Analiza danych|todo", "Python od podstaw"]
+// let htmlContent = ""
+// for (let t of trainings) {
+// 	let new_t = t.replace('|todo', '')
+// 	htmlContent += `<a style="width: 16rem; ${t.includes('|todo') ? 'opacity: 0.3' : ''}" class="btn btn-primary btn-lg px-4 mb-2" href="https://patrykpalej.dev/docs/oferta-szkolen/#python-od-podstaw-spis-tresci" role="button">${new_t}</a>
+//     <br> <br>
+//  `
+// }
+//
+// try {
+// document.getElementById("tematy-szkolen").innerHTML = htmlContent
+// } catch (e) {}
 
 
 //
