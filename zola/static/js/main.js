@@ -49,9 +49,8 @@ const trainings = Object.keys(config).sort()
 
 let htmlContent = ""
 for (let t of trainings) {
-	const new_t = t.slice().replace('|todo', '')
+	const new_t = t.replace('|todo', '')
 	const trainingUrl = config[new_t]
-	console.log(t)
 	htmlContent += `<a style="width: 16rem; ${t.includes('|todo') ? 'opacity: 0.3' : ''}" class="btn btn-primary btn-lg px-4 mb-2" href="${trainingUrl}" role="button">${new_t}</a>
     <br> <br>
  `
