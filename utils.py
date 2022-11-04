@@ -35,7 +35,9 @@ def slugify_path(path: Union[str, Path], no_suffix: bool) -> Path:
             # os_path = "/".join(slugify(item) for item in path.parts)  # !!! testowa podmiana slugowania. Chodzi o slugowanie uwzględniające kropkę w '1. Ffsgsgd'
             helper_list = []
             for item in path.parts:
-                if re.search(re.compile(r'^\d+\.\s'), item):  # jeśli item zaczyna się od '1. '
+                if item.endswith(".png"):
+                    helper_list.append(slugify(item))
+                elif re.search(re.compile(r'^\d+\.\s'), item):  # jeśli item zaczyna się od '1. '
                     helper_list.append(
                         re.search(re.compile(r'^\d+\.\s'), item)[0].strip() + slugify(
                             re.sub(re.compile(r'^\d+\.\s'), '', item)))
