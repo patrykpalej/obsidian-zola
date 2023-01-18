@@ -5,6 +5,7 @@ function isDark() {
 
 const contactImageLightMode = "https://cloud.patrykpalej.com/index.php/s/D4DFADTZkXnyDxm/preview";
 const contactImageDarkMode = "https://cloud.patrykpalej.com/index.php/s/PMcQXKXFMAPQW7b/preview";
+localStorage.setItem("theme", isDark() ? "dark" : "dark");
 
 // document.getElementById("mode").addEventListener("click", () => {
 // 	document.body.classList.toggle("dark");
