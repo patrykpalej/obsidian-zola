@@ -53,7 +53,7 @@ for (let t of trainings) {
 	const new_t = t.slice().replace('|todo', '')
 	const trainingUrl = config[t]
 	htmlContent += `<a style="width: 22rem; height: 4rem; display: flex;
- 	align-items: center; justify-content: center;" ${t.includes('|todo') ? 'opacity: 0.3' : ''}" class="btn btn-primary btn-lg px-4 mb-2" href="${trainingUrl}" role="button">${new_t}</a>
+ 	align-items: center; justify-content: center; ${t.includes('|todo') ? 'opacity: 0.3' : ''}" class="btn btn-primary btn-lg px-4 mb-2" href="${trainingUrl}" role="button">${new_t}</a>
     <br> <br>`
 }
 
